@@ -200,7 +200,7 @@ footer {
 
 .heroContainer {
     /* background-color: #cbdc13; */
-    background-image: url(./assets/image/heroSection.jpg);
+    background-image: url(heroSection.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -530,7 +530,6 @@ footer {
     /* background-color: red; */
     height: 10rem;
     width: auto;
-
 }
 
 .cardDetailsBlock h2 {
@@ -596,7 +595,7 @@ footer {
 
 
 .threeCardContainer {
-    background-image: url(./assets/image/heroSection.jpg);
+    background-image: url(heroSection.jpg);
     /* background-color: #dfedf3; */
 }
 
