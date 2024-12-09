@@ -1,0 +1,1229 @@
+/* Default code Starts here */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    /* border: 1px solid red; */
+}
+
+body {
+    background-color: #eff2f7;
+    font-family: "Roboto Condensed", sans-serif;
+    /* font-family: "Inter", sans-serif; */
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-optical-sizing: auto;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #ffffff;
+    --secondaryColor: #660600;
+    --darkColor: #330300;
+    --lightColor: #ff0f00;
+    --regularFont: 1.4rem;
+    --headingFont: 2rem;
+    --ffPrimary: "Roboto Condensed", sans-serif;
+    --ffSecondary: "Inter", sans-serif;
+}
+
+/* project standard classes Starts */
+
+.align {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.componentSpacing {
+    padding: 3rem 0;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 3rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 3rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 3rem;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 0 3rem;
+}
+
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dflex-col-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+/* project standard classes Ends */
+
+/* Default code Ends here */
+
+/* :::PARENT CONTAINER Code Starts here::: */
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+/* :::PARENT CONTAINER Code Ends here::: */
+
+
+.navContainer {
+    /* background-color: #9b065a; */
+}
+
+/* Step3: component */
+.navBar {
+    /* background-color: #440cdf; */
+} 
+
+/* Step4: row */
+.navBody {
+    background-color: #ffffff; 
+    grid-template-columns: 1fr 3fr;  
+    padding: 0rem;
+}
+/* Step5: column-1 */
+.logoBlock {
+    /* background-color: #fff; */
+    padding: 1.3rem 0rem;
+    margin-left: 6rem;
+}
+/* Step6: contentContainer */
+.logoBlock img {
+    /* background-color: #ae9dfd; */
+    height: 6.2rem;
+    width: auto;
+}
+/* Step5: column-2 */
+.navLinksBlock {
+    background-color: #d2151e;
+     gap: 3rem;
+    }
+/* Step6: contentContainer */
+.navLinksBlock li {
+    /* background-color: #097953; */
+    list-style-type: none;    
+}
+.navLinksBlock li a {
+    /* background-color: #06c9af; */
+    text-decoration: none;
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: 450;
+    font-family: 'FuturaPT-Book',sans-serif;
+    /* letter-spacing: 0.1rem; */
+}
+
+
+.heroContainer {
+    /* background-color: #cbdc13; */
+    background-image: url(./assets/image/heroSection.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+}
+
+.overlay {
+    border-image: linear-gradient(hsl(240 100% 20% / 0.6), hsl(0 100% 20% / 0.6))
+      fill 2;
+  }
+
+/* Step3: component */
+.heroSection {
+    /* background-color: #cb760e; */
+}
+
+/* Step4: row-1 */
+.heroBody {
+    /* background-color: #800080; */
+    color: #fff;
+    margin-top: 8rem;
+    margin-left: 3rem;
+}
+
+/* Step5: column-1 */
+.websiteDesignBlock {
+    /* background-color: #8f8fe3; */
+}
+
+/* Step6: contentContainer */
+.websiteDesignBlock h1 {
+    /* background-color: #ffdead; */
+    font-family:'Poppins', sans-serif;
+    font-size: 8.5rem;
+    font-weight: 600;
+    line-height:10rem;
+}
+
+.websiteDesignBlock p {
+    /* background-color: #ff69b4; */
+    font-size: 2.3rem;
+    font-family:'Poppins', sans-serif;
+    font-weight: 500;
+    margin-right: 55rem;
+    margin-top: 9rem;
+}
+
+.websiteDesignBlock span {
+    /* background-color: gold; */
+}
+
+.websiteDesignBlock span button {
+    background-color:#e7232d;
+    color: #fff;
+    border: none;
+    margin-top: 9rem;
+    margin-bottom: 7rem;
+    margin-left: 1.5rem;
+    padding-bottom: 2.3rem;
+    padding-left: 4.0rem;
+    padding-right: 4.0rem;
+    padding-top: 2.3rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+
+
+.innovativeWebContainer {
+    /* background-color: #ffe4c4; */
+}
+
+/* Step3: component */
+.innovativeWeb {
+    background-color: #fff;
+}
+
+/* Step4: row */
+.innovativeWebBody {
+    /* background-color: #ff69b4; */
+    height: 100vh;
+    margin-top: 8rem;
+    margin-bottom: 15rem;
+}
+
+/* Step5: column-1*/
+.innovativeDetailsBlock {
+    /* background-color: #14aeae; */
+    margin-left: 4rem;
+    margin-right: 6rem;
+}
+
+/* Step6: contentContainer */
+.innovativeDetailsBlock h4 {
+    /* background-color: #9e86b5; */
+    font-family: 'FuturaPT-Book', sans-serif;
+    font-size: 3.0rem;
+    margin-bottom: 1.0rem;
+    font-weight: 400;
+    color: #d2151e;
+}
+
+.innovativeDetailsBlock h2 {
+    /* background-color:#0c246d ; */
+    font-family: 'FuturaPT-Book', sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    color: #4c4c4c;
+}
+
+.innovativeDetailsBlock h3 {
+    /* background-color:#0c246d ; */
+    font-size: 5rem;
+    font-weight: 400;
+    color: #d2151e;
+}
+
+.innovativeDetailsBlock p {
+    /* background-color: #df9999; */
+    margin-bottom: 2.4rem;
+    margin-top: 3rem;
+}
+
+.quiz {
+    color: #4c4c4c;
+    font-family: 'FuturaPT-Demi', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.paraDetails {
+    font-family: "FuturaPT-Book", sans-serif;
+    margin-bottom: 2.4px;
+    font-size: 2.2rem;
+    font-weight: 200;
+    color: #040c26;
+    text-align: justify;
+    line-height: 3.6rem;
+}
+
+.innovativeDetailsBlock button {
+    background-color: #dc143c;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* Column-2 */
+.innovativeImageBlock {
+    margin-top: 3rem;
+}
+
+.innovativeImageBlock img {
+    /* background-color: aqua;*/
+    /* border: 2px solid black; */
+    /* margin-top:37rem; */
+    border-radius: 1.5rem;
+    height: 110vh;
+    width: auto;
+}
+
+
+
+.squareCardContainer{
+    /* background-color: #980893; */
+}
+
+/* Step3: component */
+.squareCard{
+    background-color: #040c26;
+    color:#fff ; 
+}
+
+/* Step4: row */
+.squareCardBody{
+    /* background-color: #e4bf3cbc; */
+    padding: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20rem;
+}
+
+/* Step5: column */
+.yearsBlock{
+    /* background-color: #c0096d; */
+    border: 5px solid #00c5dc; 
+    width: 24%;
+    padding-top: 7rem;
+    padding-bottom: 7rem; 
+}
+
+/* Step6: contentContainer */
+.yearsBlock p{
+    color:#00c5dc ;
+    font-size: 6rem;
+    font-family: 'FuturaPT-Book',serif;
+    font-weight: 300;
+}
+.yearsBlock span{
+    font-family: 'NexaBold','Segoe UI';
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+.productsBlock{
+    /* background-color: #2e09c0; */
+    border: 5px solid #ffb822;
+    width: 24%;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+.productsBlock p{
+    color: #ffb822 ;
+    font-size: 6rem;
+    font-family: 'FuturaPT-Book',serif;
+    font-weight: 300;
+}
+.productsBlock span{
+    font-family: 'NexaBold','Segoe UI';
+    font-size: 2.6rem;
+    font-weight: 500;
+   }
+.customersBlock{
+    /* background-color: #09c0a2; */
+    border: 5px solid #ff3c85;
+    width: 24%;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+.customersBlock p{
+    color: #ff3c85;
+    font-size: 6rem;
+    font-family: 'FuturaPT-Book',serif;
+    font-weight: 300;
+}
+.customersBlock span{
+    font-family: 'NexaBold','Segoe UI';
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+
+
+
+.cardContainer {
+    /* background-color: #dfedf3; */
+    margin-top: 10rem;
+}
+
+/* Step3: component */
+.card {
+    /* background-color: hotpink; */
+}
+
+/* Step4: row-1 */
+.budgetBody {
+    /* background-color: darkgoldenrod; */
+}
+
+/* Step5: column */
+.budgetTitleBlock {
+    /* background-color: darkgrey; */
+}
+
+/* Step6: contentContainer */
+.budgetTitleBlock h2 {
+    /* background-color: fuchsia; */
+    font-family: 'Nexa', sans-serif;
+    font-size: 4rem;
+    color: #040c26;
+    margin-bottom: 0.5rem;
+}
+
+/* Step4: row-2 */
+.serviceBody {
+    /* background-color: darkolivegreen; */
+}
+
+/* Step5: column */
+.serviceTitleBlock {
+    /* background-color: darkorange; */
+}
+
+/* Step6: contentContainer */
+.serviceTitleBlock p {
+    /* background-color: blueviolet; */
+    font-family: 'FuturaPT-Book', sans-serif;
+    color: #d2151e;
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    padding-top: 1rem;
+}
+
+/* Step4: row-3 */
+.cardBody {
+    /* background-color: aquamarine; */
+    gap: 4.5rem;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+/* Step5: column */
+.cardDetailsBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+    /* border: 1px solid #ccc;  */
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    background-color: #f9f9f9;
+}
+
+/* Step6: contentContainer */
+.cardDetailsBlock img {
+    /* background-color: red; */
+    height: 10rem;
+    width: auto;
+
+}
+
+.cardDetailsBlock h2 {
+    /* background-color:yellowgreen; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #040c26;
+    font-family: 'FuturaPT-Book', serif;
+    font-size: 3rem;
+}
+
+.cardDetailsBlock p {
+    /* background-color: cornflowerblue; */
+    color: #040c26;
+    font-family: 'FuturaPT-Book', serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.cardDetailsBlock ul {
+    padding-left: 6rem;
+    width: 100%;
+    color: #d2151e;
+    margin-top: 3rem;
+}
+
+.cardDetailsBlock li {
+    /* background-color: crimson; */
+    list-style-type: square;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.cardDetailsBlock li a {
+    /* background-color: salmon; */
+    text-decoration: none;
+    text-align: left;
+    color: #040c26;
+    font-size: 1.8rem;
+    font-family: 'FuturaPT-Book', sans-serif;
+    font-weight: 400;
+
+}
+
+.cardDetailsBlock button {
+    /* background-color: indigo; */
+    background-color: #e7232d;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin-left: 1.5rem;
+    margin-top: 3rem;
+    padding-bottom: 2.3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+}
+
+
+
+.threeCardContainer {
+    background-image: url(./assets/image/heroSection.jpg);
+    /* background-color: #dfedf3; */
+}
+
+/* Step3: component */
+.threeCard {
+    /* background-color: azure; */
+    margin-top: 8rem;
+}
+
+/* Step4: row */
+.threeCardBody {
+    /* background-color: #b30d6e; */
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+/* Step5: column-1 */
+.decideBlock {
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0072C6;
+    color: #fff;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    width: 30%;
+    position: relative;
+}
+
+/* Step6: contentContainer */
+.decideBlock h3 {
+    /* background-color: #5b9405; */
+    margin-top: 6rem;
+    font-family: 'Nexa',sans-serif;
+    font-size: 3.5rem;
+    /* line-height: 2.8rem; */
+    text-align: center;
+}
+
+.decideBlock p {
+    /* background-color: #ff6347; */
+    font-family: 'FuturaPT-Book',serif;
+    color: #fff;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Step5: column-2 */
+.planBlock {
+    /* background-color: hsl(191, 92%, 48%);*/
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    width: 30%;
+    position: relative;
+}
+
+/* Step6: contentContainer */
+.planBlock h3 {
+    /* background-color: #5b9405; */
+    margin-top: 6rem;
+    font-family: "Nexa",sans-serif;
+    font-size: 3.1rem;
+    text-align: center;
+    color: #040c26;
+}
+
+.planBlock p {
+    /* background-color: #ff6347; */
+    font-family: "FuturaPT-Book",serif;
+    color: #040c26;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Step5: column-3 */
+.reviewBlock {
+    background-color:#fff;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    width: 30%;
+    position: relative;
+}
+
+/* Step6: contentContainer */
+.reviewBlock h3 {
+    /* background-color: #5b9405; */
+    margin-top: 6rem;
+    font-family: 'Nexa',sans-serif;
+    font-size: 3.1rem;
+    text-align: center;
+    color: #040c26;
+}
+
+.reviewBlock p {
+    /* background-color: #ff6347; */
+    font-family: 'FuturaPT-Book',serif;
+    color: #040c26;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.cardNumber1 {
+    background-color: #fff;
+    color: #0072C6;
+    position: absolute;
+    top: -5rem;
+    left: 17.5rem;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 900;
+}
+.cardNumber2 {
+    background-color: #0072c6;
+    color:#fff;
+    position: absolute;
+    top: -5rem;
+    left: 17.5rem;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+
+
+
+.professionalCardContainer {
+    /* background-color: aqua; */
+    margin-top: 10rem;
+}
+
+/* Step3: component */
+.professionalCard {
+    /* background-color: bisque; */
+}
+
+/* Step4: row-1 */
+.headingBody {
+    /* background-color: salmon; */
+}
+
+/* Step5: column-1.1 */
+.headingBlock {
+    /* background-color: seagreen; */
+}
+
+/* Step6: contentContainer */
+.headingBlock h2 {
+    /* background-color: silver; */
+    margin-bottom: 0.5rem;
+    padding-top: 1rem;
+    font-family: 'Nexa', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: #040c26;
+}
+
+/* Step4: row-2 */
+.peopleBody {
+    /* background-color: springgreen; */
+}
+
+/* Step5: column-2.1 */
+.peopleBlock {
+    /* background-color: darkkhaki; */
+}
+
+/* Step6: contentContainer */
+.peopleBlock p {
+    /* background-color: darkgoldenrod; */
+    color: #d2151e;
+    margin-bottom: 2.5rem;
+    padding-top: 1rem;
+    font-family: 'FuturaPT-Book', serif;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+/* Step4: row-3 */
+.cardBody {
+    /* background-color: fuchsia; */
+    /* gap: rem; */
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-top: 10rem;
+    /* font-family: FuturaPT-Book; */
+}
+
+/* Step5: column-3.1 */
+.card1Block {
+    /* background-color: greenyellow; */
+    border: 1px solid #dfedf3;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+/* Step6: contentContainer */
+.card1Block a {
+    /* background-color: red; */
+    text-align: left;
+    color: #d2151e;
+    font-size: 9rem;
+    padding-left: 2rem;
+}
+
+.card1Block p {
+    /* background-color: darkorange; */
+    font-family: 'FuturaPT-Book', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: start;
+    color: #040c26;
+    padding-left: 20px;
+    margin-bottom: 3rem;
+}
+
+/* Step5: column-3.2 */
+.detailsBlock {
+    /* background-color: aqua; */
+    margin-top: 2rem;
+    padding-left: 2rem;
+}
+
+/* Step6: contentContainer */
+.detailsBlock img {
+    /* background-color: bisque; */
+}
+
+.span {
+    /* background-color: hotpink; */
+    /* margin-left: 2rem; */
+    margin-top: 3rem;
+}
+
+.blackClr {
+    color: #040c26;
+    margin-bottom: 0.5rem;
+    font-family: 'FuturaPT-Book', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.span p {
+    color: #d2151e;
+    font-family: 'FuturaPT-Book', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+hr {
+    border: 1px solid #e6e9ea;
+    width: 100%;
+    background-color: #007BFF;
+}
+
+
+
+.feelFreeContainer{
+    /* background-color: #068e61; */
+}
+
+/* Step3: component */
+.feelFree{
+    /* background-color: #e8b90d; */
+}
+
+/* Step4: row */
+.feelFreeBody{
+    background-color: #4829a0;
+    grid-template-columns: 1fr 6fr 2fr;
+    padding-top: 6rem;
+    padding-bottom: 6rem;  
+}
+
+/* Step5: column-1 */
+.iconImageBlock{
+    /* background-color: #df9fbd;  */
+}
+
+/* Step6: contentContainer */
+.iconImageBlock img{
+    /* background-color: #686806; */
+    padding: 1rem;
+    margin-left: 2rem;
+}
+
+/* Step5: column-2 */
+.paraBlock{
+    /* background-color: #cd853f; */
+}
+.paraBlock h4{
+    /* background-color: #c90862; */
+    font-size: 4rem;
+    font-weight: 400;
+    color: #ffff;
+}
+.paraBlock p{
+    /* background-color: #7bbcf8; */
+    font-size: 2.3rem;
+    color: #ffff;
+}
+button{
+    background-color:#d2151e;
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    color: #ffff;
+    font-weight: 600;
+}
+
+
+
+.trustedClientsContainer {
+    /* background-color: #ff69b4; */
+}
+
+/* Step3: component */
+.trustedClient {
+    /* background-color: #69beff; */
+    background-color: #dfedf3;
+    padding-top: 8rem;
+}
+
+/* Step4: row-1 */
+.headingLineBody {
+    /* background-color: #0fce4b; */
+}
+
+/* Step5: column-1.1 */
+.headingLineBlock {
+    /* background-color: #ff8569; */
+}
+
+/* Step6: contentContainer */
+.headingLineBlock p {
+    /* background-color: #07bebe; */
+    font-family: 'FuturaPT-Book', sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+/* Step4: row-2 */
+.paraLineBody {
+    /* background-color: #b7ec06; */
+}
+
+/* Step5: column-2.1 */
+.paraLineBlock {
+    /* background-color: #971f09; */
+}
+
+/* Step6: contentContainer */
+.paraLineBlock p {
+    /* background-color: #c50ee1; */
+    font-family: 'FuturaPT-Book', sans-serif;
+    font-size: 3.7rem;
+    font-weight: 550;
+    color: #d2151e;
+}
+
+/* Step4: row-3 */
+.trustedImageBody {
+    /* background-color: #080485; */
+    padding-bottom: 15rem;
+}
+
+/* Step5: column-3.1 */
+.trustedImageBlock {
+    /* background-color: #d0e585; */
+    gap: 6rem;
+    margin-top: 10rem;
+}
+
+/* Step6: contentContainer */
+.trustedImageBlock img {
+    background-color: #ffff;
+    /* border: 2px solid black; */
+    padding: 2rem 2rem;
+}
+
+
+
+.footerContainer {
+    /* background-color:#1841c6; */
+
+}
+
+.techFooter {
+    /* background-color: #d87093; */
+    background-color: #040c26;
+}
+
+/* ROW-1 */
+.linksBody {
+    /* background-color: #b8860b; */
+    margin-bottom: 4rem;
+    grid-template-columns: 1fr 1fr 2fr 3fr;
+    padding-top: 10rem;
+}
+
+/* COLUMN-1 */
+.companyBlock {
+    /* background-color: #b22222; */
+    margin-left: 3rem;
+}
+
+.companyBlock h3 {
+    /* background-color: aqua; */
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #ffff;
+    margin-bottom: 5rem;
+}
+
+.companyBlock li {
+    /* background-color: #00ffaa; */
+    list-style-type: none;
+}
+
+.companyBlock li a {
+    text-decoration: none;
+    color: #b0b0b0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+
+}
+
+/* COLUMN-2 */
+.usefulLinkBlock {
+    /* background-color: #237c2e; */
+
+}
+
+.usefulLinkBlock h3 {
+    /* background-color: #237c2e; */
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #ffff;
+    margin-bottom: 5rem;
+}
+
+.usefulLinkBlock li {
+    list-style-type: none;
+}
+
+.usefulLinkBlock li a {
+    text-decoration: none;
+    color: #b0b0b0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.contactUsBlock {
+    /* background-color: #06412da8; */
+}
+
+.contactUsBlock h3 {
+    /* background-color: #a70b61; */
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #ffff;
+    margin-bottom: 5rem;
+}
+
+.details {
+    /* background-color: #b0b0b0; */
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 2rem;
+}
+
+.details i {
+    margin-right: 12px;
+    font-size: 4rem;
+    color: #b0b0b0;
+}
+
+.addressText {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: #b0b0b0;
+    font-size: 1.9rem;
+    gap: 1rem;
+}
+
+.webDesignBlock {
+    /* background-color: #7a7acd; */
+    margin-right: 6rem;
+}
+
+.webDesignBlock h3 {
+    /* background-color: #10e609; */
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #ffff;
+    margin-bottom: 5rem;
+}
+
+.webDesignBlock p {
+    /* background-color: #790632; */
+    color: #b0b0b0;
+    font-size: 2.4rem;
+}
+
+.footerIcons {
+    /* background-color: #193930; */
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.footerIcons li {
+    /* background-color: #5be3ed; */
+    list-style-type: none;
+}
+
+.footerIcons a {
+    /* background-color: #d2d609; */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    color: #ffff;
+    font-weight: 400;
+}
+
+.faceBook {
+    background-color: #3b5998;
+    border-radius: 50%;
+}
+
+.twitter {
+    background-color: #1295e7;
+    border-radius: 50%;
+}
+
+.instagram {
+    background-color: #aa7a6e;
+    border-radius: 50%;
+}
+
+.copyRightBody {
+    background-color: #d2151e;
+}
+
+.copyRights {
+    /* background-color: #ab096a; */
+}
+
+.copyRights p {
+    /* background-color: #e2f555; */
+    font-size: 1.9rem;
+    color: #b0b0b0;
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+
+.termsImage {
+    /* background-color: #1032b8; */
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 30rem;
+}
+
+.termsImage p {
+    /* background-color: #d885ef; */
+    color: #b0b0b0;
+    font-size: 1.9rem;
+    text-align: right;
+}
+
+.termsImage img {
+    /* background-color: #6d0327; */
+    /* padding-left: 3rem; */
+    height: auto;
+    width: 100%;
+
+}
